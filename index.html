@@ -1,93 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script defer src="animations.js"></script>
+    <title>Serendib Frontier Capital</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    <div id="main-container">
+      <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#home-section-container"
+              ><img loading="lazy" src="./assets/images/logo.PNG" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  id="frontier-home"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  ><span>Home</span></a
+                >
+                <a
+                  id="frontier-aboutus"
+                  class="nav-link"
+                  href="#aboutus-section-container"
+                  ><span>About</span></a
+                >
+                <a
+                  id="frontier-services"
+                  class="nav-link"
+                  href="#services-section-container"
+                  ><span>Services</span></a
+                >
+                <a
+                  id="frontier-TeamCredentials"
+                  class="nav-link"
+                  href="#TeamCredentials-section-container"
+                  ><span>Portfolio</span></a
+                >
+                <a
+                  id="frontier-ContactUs"
+                  class="nav-link"
+                  href="#ContactUs-section-container"
+                  ><span>Contact</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-  <!-- jQuery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-  <!-- Font awsome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-
-
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-
-  <title>Serendib Frontier Capital</title>
-</head>
-
-<body>
-
-  <div id="main-container">
-
-    <header id="header" class="header">
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#home-section-container"><img src="./assets/images/logo.PNG" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a id="frontier-home" class="nav-link active" aria-current="page" href="#"><span>Home</span></a> 
-              <a id="frontier-aboutus" class="nav-link" href="#aboutus-section-container"><span>About Us</span></a>
-              <a id="frontier-services" class="nav-link" href="#services-section-container"><span>Services</span></a>
-              <a id="frontier-TeamCredentials" class="nav-link" href="#TeamCredentials-section-container"><span>Team Credentials</span></a>
-              <a id="frontier-ContactUs" class="nav-link" href="#ContactUs-section-container"><span>Contact Us</span></a>
+      <section id="home-section-container" class="home-container">
+        <!-- <div class="cli-path-div">      </div> -->
+        <div class="superheader-wrapper">
+          <div class="superheader-layer">
+            <div class="superheader-header-content reveal fade-left">
+              <img class="header-logo" loading="lazy" src="./assets/images/logo.PNG" alt="" style="object-fit: cover; object-position: center; height: 100px; width:375px" />
+              <h1>Unlock Private Market Growth with Innovative Solutions</h1>
+              <p>Serendib Frontier Capital: Your Trusted Partner for Cutting-Edge Corporate Finance Advisory</p>
+              <div class="superheader-buttons">
+                <button>
+                  <a href="#services-section-container"
+                    ><span>Explore Our Services</span>
+                    <i class="fas fa-chevron-right chev-icon"></i> &nbsp;</a>
+                </button>
+                <button>
+                  <a target="_blank" href="#ContactUs-section-container"
+                    ><span>Contact Us</span></a
+                  >
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </section>
 
-    <section id="home-section-container" class="home-container">
-      
-      <div class="cli-path-div">
-        
-      </div>
-      <div class="superheader-wrapper">
-          <div class="superheader-header-content reveal fade-left">
-          <h1>Unlocking Sustainable Growth with Expert Corporate Finance & Advisory Solutions</h1>
-          <p>we specialize in delivering tailored corporate finance solutions and strategic advisory services to help your business thrive.</p>
-          <div class="superheader-buttons">
-            <button> <a href="#ourservices"><span>Explore Our Services</span> <i
-                  class='fas fa-chevron-right chev-icon'></i></a></button>
-            <button> <a target="_blank" href="#ContactUs-section-container"><span>Contact Us</span></a></button>
-          </div>
+      <section id="track_records">
+        <div class="container animate-on-scroll">
+          <h2 class="display-3 pt-5 font-weight-bold title">Beyond the Business Facade</h2>
+          <h3>Serendib Frontier Capital is a boutique corporate finance advisory firm dedicated to delivering a range of cutting-edge corporate finance solutions.</h3>
+          <h3>Our team of well-respected industry specialists focuses on private market transactions. We understand the intricacies of these deals and leverage our access to a range of local and global investors.</h3>
+          <h3>This combination, coupled with our strong structuring capabilities, ensures you receive unique and innovative solutions that drive successful outcomes.</h3>
+        </div>
+        <div class="container animate-on-scroll d-none">
+        <div>
+          <h2 class="display-3">200 <span>Transactions</h2>
+          <p>LKR 250 Bn</p>
+          <p>Debt Capital Markets</p>
+        </div>
+        <div>
+          <h2 class="display-3">25 <span>Transactions</span></h2>
+          <p>LKR 50 Bn</p>
+          <p>Equity Capital Markets</p>
+        </div>
+        <div>
+          <h2 class="display-3">15 <span>Transactions</span></h2>
+          <p>LKR 50 Bn</p>
+          <p>Corporate Advisory</p>
         </div>
       </div>
 
-    </section>
+      <div class="container">
+        <h2 class="display-3 pt-5 font-weight-bold title">Our Team</h2>
+        <div class="team">
+          <div class="row pb-5">
+            <div class="col-12 col-sm-4 col-lg-3">
+              <img src="assets/images/kavinda.jpg" alt="CEO" />
+              <h4>KAVINDA DASANAYAKE</h4>
+                <p>BA,MBA,MSC,ACPM <br>            
+                <b>DIRECTOR/CEO & CO-FOUNDER</b></p>
+            </div>
+            <div class="col-12 col-sm-8 col-lg-9">
+              <h3>We leverage a dynamic Extended Project Team (EPT) on a project-by-project basis. Empowered with:</h3>
+              <ul class="pb-5 mb-0">
+                <li class="h3">Capital Market Experts</li>
+                <li class="h3">Experienced in Foreign Markets</li>
+                <li class="h3">Engaged on project basis to Better Serve Our Clients!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    <section id="aboutus-section-container" class="aboutus-container">
-      <div style="width: 100%; height: 800px; background-color:azure;"></div>
-    </section>
+        
+      </div>
+      </section>
 
-    <section id="services-section-container" class="services-container">
-      <div style="width: 100%; height: 800px; background-color:rgb(8, 65, 221);"></div>
-    </section>
+      <!-- <section id="aboutus-section-container" class="aboutus-container">
+        <div class="aboutus container">
+          <div class="aboutus-heading">
+            <h2>About us</h2>
+            <p>
+              <strong> Serendib Frontier Capital </strong> is a boutique
+              corporate finance advisory firm dedicated to delivering a range of
+              cutting-edge corporate finance solutions. We specialize in private
+              market transactions, ensuring that our clients receive bespoke
+              services tailored to their specific needs.
+            </p>
+          </div>
+          <div class="aboutus-content-wrapper">
+            <div class="aboutus-left-content-wrapper">
+              <div class="aboutus-content-image">
+                <img
+                  src="./assets/images/generated/1.jpeg"
+                  alt="finance advisors"
+                />
+              </div>
+              <div class="aboutus-content">
+                <ul>
+                  <li>
+                    Backed by a team of well-respected industry specialists.
+                  </li>
+                  <li>Access to a range of local and global investors.</li>
+                  <li>
+                    Strong structuring capabilities to provide unique and
+                    innovative solutions.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="aboutus-right-content-wrapper">
+              <h3>Meet Our Team</h3>
+              <div class="team-content-wrapper">
+                <div class="ceo-section">
+                  <img src="assets/images/ceo.jpeg" alt="CEO" />
+                  <div class="ceo-description">
+                    <p class="name">Kavinda Dasanayake</p>
+                    <p class="edu">BA,MBA,MSC,ACPM</p>
+                    <p class="position">DIRECTOR/CEO</p>
+                  </div>
+                </div>
+                <div class="team-section">
+                  <h4>Extended Project Team</h4>
+                  <ul>
+                    <li>Capital Market Experts,</li>
+                    <li>Experienced in Foreign Markets,</li>
+                    <li>Engaged on project basis,</li>
+                  </ul>
+                  <p>To Better Serve Our Clients!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
 
-    <section id="TeamCredentials-section-container" class="TeamCredentials-container">
-      <div style="width: 100%; height: 200px; background-color:rgb(11, 108, 108);"></div>
-    </section>
+      <section id="services-section-container" class="services-container" style="background-color: #95bbfe;">
+        <div class="services-wrapper">
+          <h2 class="headline-services">Our Services</h2>
 
-    <section id="ContactUs-section-container" class="ContactUs-container">
-      <div style="width: 100%; height: 800px; background-color:rgb(113, 135, 11);"></div>
-    </section>
+          <div class="services-cards-layout">
+            <div class="card-bg-container">
+              <div class="subservice-layout"></div>
+            </div>
 
-  </div>
+            <div class="services-layout">
+              <div class="card">
+                <div class="card-body">
+                  <i class="fas fa-lock fa-chart-line icon-card"></i>
+                  <h5 class="card-title">Debt Markets</h5>
+                  <p class="card-text">
+                    Access a wide range of financing options to fuel your
+                    growth.
+                  </p>
+                  <button
+                    class="btn btn-primary view-more-services-btn"
+                    card-service-id="0"
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <i class="fas fa-chart-bar fa-trend-up icon-card"></i>
+                  <h5 class="card-title">Equity Markets</h5>
+                  <p class="card-text">
+                    Elevate your company's potential with expert equity
+                    transactions.
+                  </p>
+                  <button
+                    class="btn btn-primary view-more-services-btn"
+                    card-service-id="1"
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <i class="fas fa-lightbulb icon-card"></i>
+                  <h5 class="card-title">Advisory</h5>
+                  <p class="card-text">
+                    Let our team illuminate the path to your financial success.
+                  </p>
+                  <button
+                    class="btn btn-primary view-more-services-btn"
+                    card-service-id="2"
+                  >
+                    View more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</body>
+      <section id="team_credentials" class="pb-5">
+        <div class="container animate-on-scroll">
+          <h2 class="display-3 pt-5 font-weight-bold title">Team Credentials</h2>
+          <h3>Trusted advisors for high-profile capital market transactions in Sri Lanka</h3>
+          <div class="creds">
+            <ul>
+              <li class="h3">Largest Debt Issues and Equity IPOs</li>
+              <li class="h3">Largest preference share issue</li>
+              <li class="h3">Largest share repurchase</li>
+              <li class="h3">Cross-border acquisitions</li>
+              <li class="h3">Cross-border loan syndications</li>
+            </ul>
+            <div>
+              <img loading="lazy" src="./assets//images/team_credentials.svg" alt="Team Image">
+            </div>
+          </div>
 
+
+          <div class="animate-on-scroll transactions special mt-1 mb-5">
+            <div>
+              <h2 class="h3"><span>Our team boasts a legacy of expertise, with </span> well-respected industry specialists <span>bringing over </span>65 years of combined experience <span>to the table. This depth of knowledge is further amplified by our extensive</span> access to a diverse pool of investors<span>, ready to fuel your growth. Additionally, our reach extends beyond borders, granting you </span>access to the burgeoning Bangladeshi market<span>, unlocking an exciting new chapter for your venture.</span></h2>
+            </div>
+          </div>
+          <hr>
+          
+          <h2 class="display-3 pt-5 font-weight-bold title">Team Track Record</h2>
+          <h3>We Offer end-to-end Corporate Finance Solutions from Advisory to successful Closure of Transactions</h3>
+          <div class="animate-on-scroll transactions credentials mt-5">
+            <div>
+              <h2 class="display-3">200 <span>Transactions</h2>
+              <p>LKR 250 Bn</p>
+              <p>Debt Capital Markets</p>
+            </div>
+            <div>
+              <h2 class="display-3">25 <span>Transactions</span></h2>
+              <p>LKR 50 Bn</p>
+              <p>Equity Capital Markets</p>
+            </div>
+            <div>
+              <h2 class="display-3">15 <span>Transactions</span></h2>
+              <p>LKR 50 Bn</p>
+              <p>Corporate Advisory</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section id="contact">
+        <div class="container py-5">
+          <h2 class="display-3 pt-3 font-weight-bold animate-on-scroll">
+            Connect with us
+          </h2>
+          <h3 class="col-md-8 pb-5 h4 animate-on-scroll">
+            We're here to answer your questions and connect you with the information you need.
+            Feel free to reach out to us in whichever way works best for you.
+          </h3>
+          <div class="pt-5">
+            <div class="contact-items animate-on-scroll">    
+              <div class="contact_item call_item">
+                <img src="./assets/images/contact_phone.svg" alt="">
+                <h3>Give us a call
+                <a href="tel:+94112680788">+94 77 581 2597</a> </h3>
+              </div>
+              <div class="contact_item whatsapp_item">
+                <img src="./assets/images/contact_whatsapp.svg" alt="">
+                <h3>WhatsApp
+                <a href="https://wa.me/+94775812597">+94 77 581 2597</a></h3>
+              </div>
+              <div class="contact_item contact_item__map">
+                <iframe 
+                loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.982735129603!2d79.86452541843849!3d6.888673789482383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd1db25f8d3%3A0xf5fe5c790615b8e4!2s3%20Maurice%20Pl%2C%20Colombo%2000500!5e0!3m2!1sen!2slk!4v1717484778245!5m2!1sen!2slk" 
+                width="100%" height="100%" style="border:0; filter: invert(100%);" 
+                allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="contact_item email_item">
+                <img src="./assets/images/contact_email.svg" alt="">
+                <h3>Drop us a line
+                <a href="tel:+94112680788">kavinda@serendibfc.com</a></h3>
+              </div>
+              <div class="contact_item address_item">
+                <img src="./assets/images/contact_location.svg" alt="">
+                <h3>Our Office <span>
+                  #3, Maurice Place, Colombo 05</span></h3>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      © 2024 Serendib Frontier Capital. All rights reserved.
+    </footer>
+  </body>
 </html>

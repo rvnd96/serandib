@@ -1,0 +1,91 @@
+#contact {
+    .contact-items {
+        grid-template-columns: 1fr;
+
+        .call_item {
+            grid-area: call_item;
+        }
+        .whatsapp_item {
+            grid-area: whatsapp_item;
+        }
+        .contact_item__map {
+            grid-area: contact_item__map;
+            iframe {
+                @media only screen and (max-width: 767.9px) {
+                    width: 100% !important;
+                    height: 300px;
+                }
+            }
+        }
+        .email_item {
+            grid-area: email_item;
+            @media only screen and (max-width: 575.98px) {
+                a {
+                    inline-size: 150px;
+                    overflow-wrap: break-word;
+                }
+            }
+            
+        }
+        .address_item {
+            grid-area: address_item;
+            
+        }
+
+        grid-template-areas: 
+            "call_item"
+            "whatsapp_item"
+            "email_item"
+            "contact_item__map"
+            "address_item"
+        ;
+        
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "call_item whatsapp_item"
+                "contact_item__map email_item"
+                "contact_item__map address_item"
+            ;
+        }
+        @media (min-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+                "call_item whatsapp_item contact_item__map"
+                "email_item address_item contact_item__map"
+            ;
+        }
+    }
+    
+}
+
+#home-section-container {
+    .superheader-header-content {
+        img.header-logo {
+            @media only screen and (max-width: 575.98px) {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+#team_credentials {
+    .creds {
+        grid-template-columns: 1fr !important;
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+    .transactions {
+        
+        &.credentials {
+            grid-template-columns: 1fr;
+            @media (min-width: 575px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
