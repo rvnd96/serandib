@@ -1,5 +1,12 @@
 #contact {
     .contact-items {
+        .contact_item {
+            a, h3 {
+                @media only screen and (max-width: 575.98px) {
+                    font-size: 16px;
+                }
+            }
+        }
         grid-template-columns: 1fr;
 
         .call_item {
@@ -19,13 +26,6 @@
         }
         .email_item {
             grid-area: email_item;
-            @media only screen and (max-width: 575.98px) {
-                a {
-                    inline-size: 150px;
-                    overflow-wrap: break-word;
-                }
-            }
-            
         }
         .address_item {
             grid-area: address_item;

@@ -1635,6 +1635,12 @@ section#team_credentials div.creds ul li::before {
   grid-template-columns: 1fr;
   grid-template-areas: "call_item" "whatsapp_item" "email_item" "contact_item__map" "address_item";
 }
+@media only screen and (max-width: 575.98px) {
+  #contact .contact-items .contact_item a,
+  #contact .contact-items .contact_item h3 {
+    font-size: 16px;
+  }
+}
 #contact .contact-items .call_item {
   grid-area: call_item;
 }
@@ -1652,12 +1658,6 @@ section#team_credentials div.creds ul li::before {
 }
 #contact .contact-items .email_item {
   grid-area: email_item;
-}
-@media only screen and (max-width: 575.98px) {
-  #contact .contact-items .email_item a {
-    inline-size: 150px;
-    overflow-wrap: break-word;
-  }
 }
 #contact .contact-items .address_item {
   grid-area: address_item;
